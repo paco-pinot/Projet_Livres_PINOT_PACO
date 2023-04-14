@@ -1,0 +1,98 @@
+
+.sectionNewsletter{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.newsletterContainer{
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.203);
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    padding: 2em;
+}
+.leftNewsLetter{
+    height: 17em;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.rightNewsLetter{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 60%;
+}
+.rightNewsLetter h3{
+    color: #2F4858;
+    font-size: xx-large;
+    margin: 0;
+}
+.rightNewsLetter p{
+    color: grey;
+    font-size: medium;
+    margin: 0;
+}
+.inputNewsletter{
+    height: 3em;
+    width: 100%;
+}
+.inputNewsletter form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   
+}
+.inputNewsletter input{
+    border: none;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.386);
+    height: 100%;
+    width: 100%;
+    /* width: 20em; */
+}
+.inputNewsletter input:focus{
+    outline: none;
+}  
+.inputNewsletter button{
+    height: 100%;
+    border: none;
+    color: white;
+    background-color: #5A8F7B;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.reseauxNewsLetter{
+    display: flex;
+    gap: 10px;
+    
+}
+.reseauxItems{
+    color: white;
+    font-size: medium;
+    background-color:#5A8F7B ;
+    border-radius: 50%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 10px;
+}
+
+
+@media (max-width: 800px){
+    .sectionNewsletter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletterContainer{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .reseauxNewsLetter{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

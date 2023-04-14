@@ -1,0 +1,126 @@
+.carouselContainer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: #f6f8fa;
+    height: 700px;
+}
+
+.leftCarousel {
+    display: flex; 
+    margin-left: 1.25rem; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 50%; 
+    gap: 3rem; 
+}
+
+.leftCarouselTop {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.25rem; 
+}
+
+.divInvest {
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    font-weight: 600; 
+    color: #5f8d7c;
+}
+
+.divFriend {
+    font-size: 3rem;
+    line-height: 1; 
+    font-weight: 700; 
+}
+
+.leftCarouselLorem {
+    font-size: 1.5rem;
+    line-height: 2rem; 
+    color: #797e84;    
+}
+
+.carouBtn {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; 
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; 
+    color: #ffffff; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    font-weight: 500; 
+    border-radius: 0.25rem; 
+    background: #5a8e7a;
+}
+
+
+
+
+
+.rightCarousel {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    width: 50%; 
+}
+
+.divImgCarou img {
+    height: 550px;
+}
+
+
+
+
+
+
+
+/* ------- ARROWS --------- */
+.previous {
+    display: flex; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 20; 
+    padding: 0.75rem; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+    opacity: 0.3;
+}
+.previous:hover {
+    opacity: 1; 
+}
+
+.absolute {
+    position: absolute;
+}
+
+.dNone {
+    display: none;
+}
+
+
+
+.next {
+    display: flex; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 20; 
+    padding: 0.75rem; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+    opacity: 0.3; 
+}
+
+.next:hover {
+    opacity: 1; 
+}
+
+
+.arrow {
+    color: #ffffff; 
+    color: red;
+}

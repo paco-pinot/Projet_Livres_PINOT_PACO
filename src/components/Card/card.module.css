@@ -1,0 +1,136 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.203);
+    position: relative;
+    transition: transform 0.5s ease-out;
+    transform: translateX(-100%);
+    margin-bottom: 1em;
+  }
+  
+  .card.show {
+    transform: translateX(0%);
+  }
+  
+  .card:nth-child(2n) {
+    transform-origin: right;
+  }
+  
+  .card:nth-child(2n-1) {
+    transform-origin: left;
+  }
+.topCard{
+    height: 70%;
+    width: 100%;
+}
+.topCard img{
+    width: 100%;
+    height: 100%;
+}
+.bottomCard p{
+    margin: 0 ;
+    font-size: medium;
+    
+}
+.bottomCard{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+    transition: 0.5s;
+}
+.card:hover .bottomCard{
+    transform: translateY(-25%);
+}
+.bookTitleCard{
+    font-weight: bold;
+    color:#293e4c;
+    font-family: 'Philosopher', sans-serif;
+}
+.bookAuthors{
+    color: grey;
+}
+.bookAuthors span{
+    color:#293e4c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bookRating{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #5A8F7B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoHoverCard{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 10px;
+    transition: 0.4s;
+    transform: scaleX(0);
+}
+.logoCard{
+    background-color: #5A8F7B;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: medium;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.logoCard:hover{
+    background-color: #293e4c;
+}
+.card:hover .logoHoverCard{
+    transform: scaleX(1);
+}
+
+.addFavCard{
+    color: white;
+    border: none;
+    padding: 15px;
+    transition: 1s; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background: linear-gradient(to left bottom , #5A8F7B  50%, #36564a    50%);
+    background-size: 200% 200%;
+    background-position: right top  ;
+    transition: .5s ease;
+    cursor: pointer;
+    transform: scaleY(0);
+}
+
+.addFavCard:hover{
+    background-position: left bottom ; 
+}
+
+.card:hover .addFavCard{
+transform: scaleY(1);
+   transition-duration:0.5s ;
+}
+.fav{
+    color: gold;
+    background-color: #5A8F7B;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: medium;
+    transition: 0.4s;
+    cursor: pointer;
+}

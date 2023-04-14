@@ -1,0 +1,73 @@
+.section2{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 7em;
+    padding-bottom: 3em;
+    
+}
+.section2Items{
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.203);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 200px;
+}
+.imgSection2{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    /* transition: 0.5s; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.imgSection2:hover img{
+    scale: 1.15;
+    transition-duration: 1s;
+}
+.imgSection2 img{
+    width: 100%;
+    height: 100%;
+}
+.section2Text p{
+    margin: 0;
+}
+.section2Text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+.section2Text span{
+    color: #5A8F7B;
+}
+.saleS2{
+    color: #5A8F7B;
+    font-weight: bold;
+}
+
+@media (max-width: 800px){
+    .section2{
+        flex-direction: column;
+    }
+    .section2Items{
+        width: 300px;
+    }
+    .imgSection2{
+        height: 70%;
+    }
+    .section2Text{
+        height: 30%;
+    }
+    .startingS2{
+        display: none;
+    }
+    
+    .section2Items{
+        flex-direction: column;
+    }
+}

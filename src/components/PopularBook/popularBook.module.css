@@ -1,0 +1,83 @@
+.topPopularBook{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.topBookP{
+    color: #5A8F7B;
+    font-size: larger;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.popularBookTitle{
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #293e4c;
+
+}
+.linePopularBook{
+background-color: #5A8F7B;
+height: 2px;
+width: 13em;
+}
+.linePopularBookContainer{
+    position: relative;
+}
+.containerLosange{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -9px;
+    left: 5em;
+}
+.losange1,.losange2{
+background-color: #5a8f7bb5;
+height: 20px;
+width: 20px;
+transform: rotate(45deg);
+}
+
+
+.bottomPopularBook{
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: stretch;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+.loadMore{
+    margin-top: 5em;
+    color: white;
+    border: none;
+    padding: 15px;
+    transition: 1s; 
+    padding-left: 25px;
+    padding-right: 25px;
+ 
+    display: block;
+    background: linear-gradient(to left bottom , #5A8F7B  50%, #36564a    50%);
+    background-size: 200% 200%;
+    background-position: right top  ;
+    transition: .5s ease;
+}
+
+.loadMore:hover{
+    background-position: left bottom ;
+}
+.cardContainerPopBook{
+    width: 15em;
+    height: 400px;
+}
+
+
+
+@media (max-width: 800px){
+    .bottomPopularBook{
+        flex-direction: column;
+    }
+}

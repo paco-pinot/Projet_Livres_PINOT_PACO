@@ -1,0 +1,42 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 100vw;
+    height: 100dvh;
+}
+.btn{
+    color: white;
+    border: none;
+    padding: 15px;
+    transition: 1s; 
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to left bottom , #5A8F7B  50%, #36564a    50%);
+    background-size: 200% 200%;
+    background-position: right top  ;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-position: left bottom ;
+}
+.login{
+    width: 200px;
+    height: 20px;
+}
+.signUp{
+    width: 200px;
+    height: 20px;
+
+}
+.messageLog{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder ;
+    padding-top: 3em;
+
+}

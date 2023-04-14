@@ -1,0 +1,309 @@
+.inputNav{
+    padding:5px;
+    width:40em;
+    height:3em;
+}
+.inputNav input{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F7F9;
+    border: none;
+    
+}
+.inputNav input:focus{
+    outline: none;
+}
+
+.input{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #F5F7F9;
+gap: 1em;
+padding-left: 1em;
+}
+.rightNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.phoneNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.bookNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.favoritesNav{
+    background-color: #293e4c;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    width:10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: -14px;
+    left: 12px;
+}
+.leftNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+/* ________________BURGER */
+.burgerNav{
+    display: flex;
+    flex-direction: column;
+    gap: 3.3px;
+    width: 25px;
+    cursor: pointer;
+}
+.burgerHaut{
+height: 2.6px;
+background-color: #293e4c;
+width: 10px;
+transition: .5s;
+}
+.burgerNav:hover .burgerHaut{
+    width: 20px;
+}
+.burgerMilieu{
+    height: 2.6px;
+    background-color: #293e4c;
+    width: 20px;
+    transition: .5s;
+}
+.burgerNav:hover .burgerMilieu{
+    width: 15px;
+}
+.burgerBas{
+    height: 2.6px;
+    background-color: #293e4c;
+    width: 15px;
+     transition: .5s;
+}
+.burgerNav:hover .burgerBas{
+    width: 10px;
+}
+
+
+/* ________________DROPDOWN_______________ */
+
+.containerDropdownNavbar{
+    height: 100dvh;
+    width: 30vw;
+    background-color: white;
+    border: 1px solid black;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+    left: 0%;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s;
+}
+.dropdownOpen{
+    height: 100dvh;
+    width: 30vw;
+    background-color: white;
+    border: 1px solid black;
+    position: fixed;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-out;
+    left: 0%;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s;
+    border: 5px solid #F5F7F9;
+    border-left: 0px;
+}
+
+.topDropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #F5F7F9;
+    font-weight: bold;
+    font-size: larger;
+}
+.bottomDropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-left: 1em;
+    margin-top: 3em;
+}
+.crossDropdown{
+    cursor: pointer;
+}
+.crossDropdown:hover{
+    color: #354f60;
+}
+.dropdownItems{
+    cursor: pointer;
+}
+.burgerNav:hover .containerDropdownNavbar{
+left: 0;
+transition: 0.5s;
+}
+
+
+
+/* ________________DROPDOWN RIGHT___________________ */
+.lol{
+    position: relative;
+}
+.containerDropdownNavbarRight{
+    height:100%;
+    width: 30vw;
+    background-color: white;
+    border: 1px solid black;
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+    right: 0%;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s;
+}
+.dropdownOpenRight{
+    height: 100%;
+    width: 30vw;
+    background-color: white;
+    border: 1px solid black;
+    position: fixed;
+    transform: translateX(0%);
+    transition: transform 0.5s ease-out;
+    right: 0%;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s;
+    border: 5px solid #F5F7F9;
+    border-right: 0px;
+}
+
+.dropDownScroll{
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    height: 60%;
+}
+/* ___________PANIER_______________ */
+.itemPanier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.imgItemPanier{
+height: 100px;
+width: 30%;
+}
+.imgItemPanier img{
+    width: 100%;
+    height: 100%;
+}
+.rightPartItemPanier{
+    width: 70%;
+}
+.divPoubItemPanier{
+    display: flex;
+    height: 30px;
+}
+.divPoubItemPanier div{
+    height: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    background-color: #293e4c;
+}
+.poubelle{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.plusPoub{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.containerRemoveFav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.removeFav{
+    color: white;
+    border: none;
+    padding: 15px;
+    transition: 1s; 
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 1em;
+    width: 70%;
+    display: block;
+    background: linear-gradient(to left bottom , #5A8F7B  50%, #36564a    50%);
+    background-size: 200% 200%;
+    background-position: right top  ;
+    transition: .5s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.removeFav:hover{
+    background-position: left bottom ;
+}
+.panierVide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: x-large;
+    width: 100%;
+    height: 100%;
+}
+.starPanier{
+    font-size: 5em;
+    color: #293e4c;
+}
+
+
+
+@media (max-width: 800px){
+    .leftNavbar{
+        justify-content: center;
+    }
+    .rightNav{
+        justify-content: space-between;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: small;
+    }
+    .inputNav{
+        height: 20px;
+    }
+    .containerDropdownNavbarRight{
+        transform: translateX(200%);
+    }
+    .dropdownOpenRight, .dropdownOpen{
+        width: 100vw !important;
+
+    }
+    .containerDropdownNavbar{
+        transform: translateX(-150%);
+        width: 100vw !important;
+    }
+   
+
+}

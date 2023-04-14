@@ -1,0 +1,112 @@
+.allBooksContainer{
+    margin-top: 10em;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.bottomRightPartAllBooks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.bottomRightPartAllBooksSecond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.rightPartAllBooks{
+    width: 85%;
+}
+.leftSideBarAllBooks{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 1em;
+    position: sticky;
+    top: 0;
+}
+.categoryItems{
+    transition: .5s;
+}
+.categoryItems:hover{
+    color:#5A8F7B ;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.topRightPartAllBooks{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-bottom: 2em;
+}
+.topRightItemsLogo{
+    display: flex;
+    gap: 10px;
+}
+.topRightItemsLogo div{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputAllBooks{
+    width: 80%;
+    height: 2em;
+    border-radius: 5px;
+}
+.inputAllBooks input{
+    background-color: #F5F7F9;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.inputAllBooks input:focus{
+    outline: none;
+    border: solid 1px #5A8F7B;
+}
+.cardContainer{
+    width: 15em;
+    height: 400px;
+
+}
+.cardContainer{
+    width: 15em;
+    height: 400px;
+
+}
+.cardContainer2{
+    width: 300px;
+    height: 300px;
+}
+.green{
+    color:#5A8F7B ;
+    font-weight: bold;
+}
+.authors{
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .categoryFilters{
+        display: flex;
+        gap: 2em;
+        /* flex-wrap: wrap; */
+    }
+    .leftSideBarAllBooks{
+        /* width: 100%; */
+    }
+    .allBooksContainer{
+        flex-direction: column;
+    }
+}
