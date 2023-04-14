@@ -98,7 +98,7 @@ export default function Navbar(props) {
             </div>
         </div>: <div className={`${styles.navitem} ${styles.input}`}></div> }
         <div className={`${styles.navitem} ${styles.rightNav}`}>
-            <div onClick={()=>{router.push("/Login")}} className={styles.log}>Log In/Subscribe</div>
+            {/* <div onClick={()=>{router.push("/Login")}} className={styles.log}>Log In/Subscribe</div> */}
             <div className={styles.phoneNav}>
                 <i class="fa-solid fa-phone-volume"></i>
                 <span> 01234567890</span>

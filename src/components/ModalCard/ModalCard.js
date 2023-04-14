@@ -40,7 +40,9 @@ export default function ModalCard() {
                                 <li>ID : {card.element.id}</li>
                             </ul>
                         </div>
-                        <button onClick={()=>{dispatch(favoriteAction({element : card.element}))}} className={styles.addFav} >Add Fav</button>
+                        <div>
+                            <button onClick={()=>{dispatch(favoriteAction({element : card.element}))}} className={styles.addFav} >Add Fav</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,7 +2,6 @@
     margin-top: 10em;
     display: flex;
     width: 100%;
-    position: relative;
 }
 .bottomRightPartAllBooks{
     display: flex;
@@ -29,8 +28,6 @@
     flex-direction: column;
     gap: 1em;
     padding-left: 1em;
-    position: sticky;
-    top: 0;
 }
 .categoryItems{
     transition: .5s;
@@ -80,11 +77,6 @@
     height: 400px;
 
 }
-.cardContainer{
-    width: 15em;
-    height: 400px;
-
-}
 .cardContainer2{
     width: 300px;
     height: 300px;
@@ -96,17 +88,49 @@
 .authors{
     cursor: pointer;
 }
+.dropdownAuthors{
+    height: 200px;
+    overflow-y: scroll;
+}
 
 @media (max-width: 800px){
-    .categoryFilters{
-        display: flex;
-        gap: 2em;
-        /* flex-wrap: wrap; */
+    .allBooks{
+        width: 100vw;
     }
+    .bottomRightPartAllBooks{
+        justify-content: center;
+        align-items: center;
+        /* margin: 0; */
+    }
+    .inputAllBooks{
+        width: 40%;
+    }
+    .categoryFilters{
+        height: 200px;
+        overflow-y: scroll;
+        /* flex-wrap: wrap; */
+        width: 50vw;
+    }
+
     .leftSideBarAllBooks{
-        /* width: 100%; */
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 3em;
     }
     .allBooksContainer{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .dropdownAuthors{
+        height: 200px;
+        width: 50vw;
+    }
+    .topRightPartAllBooks{
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+        margin: auto;
     }
 }
