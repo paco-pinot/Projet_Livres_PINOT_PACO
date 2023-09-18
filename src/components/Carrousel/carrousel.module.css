@@ -4,6 +4,8 @@
     align-items: center; 
     background: #f6f8fa;
     height: 700px;
+    margin-top: 7vh;
+    position: relative;
 }
 
 .leftCarousel {
@@ -52,41 +54,47 @@
     font-weight: 500; 
     border-radius: 0.25rem; 
     background: #5a8e7a;
+    border: none;
+    cursor: pointer;
 }
-
-
-
-
 
 .rightCarousel {
     display: flex; 
     justify-content: center; 
     align-items: flex-end; 
     width: 50%; 
+    height: 100%;
 }
-
+.divImgCarou {
+    height: 100%;
+    width: 100%;
+}
 .divImgCarou img {
-    height: 550px;
+    /* height: 550px;
+     */
+     height: 100%;
+     width: 100%;
 }
 
 
 
 
-
-
+.divCarouselRelative{
+    position: relative;
+}
 
 /* ------- ARROWS --------- */
 .previous {
     display: flex; 
     top: 0; 
     bottom: 0; 
-    left: 0; 
+    left: 0;
     z-index: 20; 
     padding: 0.75rem; 
     justify-content: center; 
     align-items: center; 
     cursor: pointer; 
-    opacity: 0.3;
+    opacity: 0.35; 
 }
 .previous:hover {
     opacity: 1; 
@@ -94,8 +102,16 @@
 
 .absolute {
     position: absolute;
-}
 
+}
+.bgArrow{
+    background-color: #5a8e7a;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .dNone {
     display: none;
 }
@@ -112,7 +128,8 @@
     justify-content: center; 
     align-items: center; 
     cursor: pointer; 
-    opacity: 0.3; 
+    opacity: 0.35; 
+
 }
 
 .next:hover {
@@ -121,6 +138,43 @@
 
 
 .arrow {
-    color: #ffffff; 
-    color: red;
+
+    color: white;
+    font-size: x-large;
+    /* background-color: #5a8e7a;
+    padding: 20px;
+    border-radius: 50%; */
+}
+
+/* TABLETTES */
+@media (min-width: 701px) and (max-width: 1000px) {
+    .carouselContainer{
+        height: 80dvh;
+        margin-top: 30dvh;
+
+    }
+    .divFriend,.divInvest,.leftCarouselLorem, .carouBtn{
+        font-size: medium;
+    }
+}
+/* TELEPHONE */
+@media (max-width: 700px){
+    .carouselContainer{
+        height: 70dvh;
+        margin-top: 30dvh;
+        font-size: 5px!important;
+    }
+    .divFriend,.divInvest,.leftCarouselLorem, .carouBtn{
+        font-size: x-small;
+    }
+    .carouBtn{
+        padding-left: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 5px;
+    }
+    .leftCarousel{
+        /* font-size: 10px!important; */
+        gap: 5px;
+    }
 }

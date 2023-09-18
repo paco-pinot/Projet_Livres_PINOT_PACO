@@ -79,11 +79,28 @@
 }
 
 
-@media (max-width: 800px){
+/* TABLETTES */
+@media (min-width: 701px) and (max-width: 1000px) {
+    .sectionNewsletter{
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .newsletterContainer{
+        width: 80%;
+    }
+}
+/* TELEPHONE */
+@media (max-width: 700px){
     .sectionNewsletter{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
     }
     .newsletterContainer{
         flex-direction: column;
@@ -91,7 +108,8 @@
         
     }
     .reseauxNewsLetter{
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }

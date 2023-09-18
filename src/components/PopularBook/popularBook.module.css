@@ -74,9 +74,17 @@ transform: rotate(45deg);
     height: 400px;
 }
 
-
-
-@media (max-width: 800px){
+/* TABLETTES */
+@media (min-width: 701px) and (max-width: 1000px) {
+    .bottomPopularBook{
+        align-items: center;
+        justify-content: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+/* TELEPHONE */
+@media (max-width: 700px){
     .bottomPopularBook{
         flex-direction: column;
     }

@@ -1,6 +1,7 @@
 import styles from "../styles/allBooks.module.css"
 import Navbar from "@/components/Navbar/Navbar";
 import Card from "@/components/Card/Card";
+import Card2 from "@/components/Card2/Card2";
 import { modalRecup } from "@/features/BookModalSlice";
 import { favoriteAction } from "@/features/FavoriteSlice";
 import ModalCard from "@/components/ModalCard/ModalCard";
@@ -59,14 +60,22 @@ export default function AllBooks({data,allAuthors}) {
                             })
                         }
                     </div>
-                    <div className={styles.dropdownAuthors}>
-                        {allAuthorsTab.map((element)=>{
-                            return(
-                            <div onClick={()=>{setAuthors(element)}} className={styles.authors}>{element}</div>
-                            )})}
-                    </div>
-                    <div className={styles.authorsFilter}>
 
+                    <div>
+                        <select
+                        className={styles.dropdownAuthors}
+                        value={Authors}
+                        onChange={(e) => setAuthors(e.target.value)}
+                        >
+                        {allAuthorsTab.map((author, index) => (
+                            <option key={index} value={author}>
+                            {author}
+                            </option>
+                        ))}
+                        </select>
+                    </div>
+
+                    <div className={styles.authorsFilter}>
                     </div>
                 </div>
                 <div className={styles.rightPartAllBooks}>
@@ -100,9 +109,20 @@ export default function AllBooks({data,allAuthors}) {
                                     })
                                     .map((element,index) => {
                                         return (
-                                            <div className={boolList===false?`${styles.cardContainer}`:`${styles.cardContainer2}`}>
-                                          <Card element={element}/>
-                                          </div>
+                                            <>
+                                            
+                                                {
+                                                    boolList===false ? 
+                                                    <div className={styles.cardContainer}>
+                                                    <Card element={element}/>
+                                                    </div>
+                                                    :
+                                                    <div className={styles.cardContainer2}>
+                                                        <Card2 element={element}/>
+                                                    </div>
+                                                }
+
+                                        </>
                                         )
                                     }) :
                                 data
@@ -123,9 +143,21 @@ export default function AllBooks({data,allAuthors}) {
                                     })
                                     .map((element,index) => {
                                         return (
-                                            <div className={boolList===false?`${styles.cardContainer}`:`${styles.cardContainer2}`}>
-                                          <Card element={element}/>
-                                          </div>
+                                            
+                                            <>
+                                            
+                                                {
+                                                    boolList===false ? 
+                                                    <div className={styles.cardContainer}>
+                                                    <Card element={element}/>
+                                                    </div>
+                                                    :
+                                                    <div className={styles.cardContainer2}>
+                                                        <Card2 element={element}/>
+                                                    </div>
+                                                }
+
+                                          </>
                                         )
                                     })
 
@@ -149,9 +181,20 @@ export default function AllBooks({data,allAuthors}) {
                                     })
                                     .map((element,index) => {
                                         return (
-                                            <div className={boolList===false?`${styles.cardContainer}`:`${styles.cardContainer2}`}>
-                                          <Card element={element}/>
-                                          </div>
+                                            <>
+                                            
+                                                {
+                                                    boolList===false ? 
+                                                    <div className={styles.cardContainer}>
+                                                    <Card element={element}/>
+                                                    </div>
+                                                    :
+                                                    <div className={styles.cardContainer2}>
+                                                        <Card2 element={element}/>
+                                                    </div>
+                                                }
+
+                                            </>
                                         )
                                     }) :
                                 data
@@ -173,9 +216,20 @@ export default function AllBooks({data,allAuthors}) {
                                     })
                                     .map((element,index) => {
                                         return (
-                                            <div className={boolList===false?`${styles.cardContainer}`:`${styles.cardContainer2}`}>
-                                          <Card element={element}/>
-                                          </div>
+                                            <>
+                                            
+                                                {
+                                                    boolList===false ? 
+                                                    <div className={styles.cardContainer}>
+                                                    <Card element={element}/>
+                                                    </div>
+                                                    :
+                                                    <div className={styles.cardContainer2}>
+                                                        <Card2 element={element}/>
+                                                    </div>
+                                                }
+
+                                        </>
                                         )
                                     })
                         }

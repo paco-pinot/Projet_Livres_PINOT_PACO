@@ -50,15 +50,12 @@
     font-weight: bold;
 }
 
-@media (max-width: 800px){
+@media (max-width: 700px){
     .section2{
         flex-direction: column;
     }
     .section2Items{
         width: 300px;
-    }
-    .imgSection2{
-        height: 70%;
     }
     .section2Text{
         height: 30%;
@@ -67,7 +64,4 @@
         display: none;
     }
     
-    .section2Items{
-        flex-direction: column;
-    }
 }

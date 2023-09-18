@@ -13,9 +13,10 @@ import { useRef } from 'react'
 export async function getStaticProps() {
   const res = await fetch("https://example-data.draftbit.com/books");
   const data = await res.json();
+  const filteredData = data.filter(item => item.id <= 240);
   return{
     props: {
-      data
+      data:filteredData
     }
   }
 }

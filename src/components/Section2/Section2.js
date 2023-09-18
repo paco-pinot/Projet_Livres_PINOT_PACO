@@ -9,7 +9,7 @@ export default function Section2(props) {
                 <div className={styles.section2Text}>
                     <p className={styles.saleS2}> SALE UP TO 15% </p>
                     <p>{props.data[1].title}</p>
-                    <p className={styles.startingS2}> Starting at: <span> on as pas le prix</span></p>
+                    <p className={styles.startingS2}> Starting at: <span> No price</span></p>
 
                 </div>     
             </div>
@@ -20,7 +20,7 @@ export default function Section2(props) {
                 <div className={styles.section2Text}>
                     <p className={styles.saleS2}> SALE UP TO 10% </p>
                     <p>{props.data[1].title}</p>
-                    <p className={styles.startingS2}> Starting at: <span> on as pas le prix</span></p>
+                    <p className={styles.startingS2}> Starting at: <span> No price</span></p>
 
                 </div>    
             </div>
