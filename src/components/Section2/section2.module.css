@@ -62,5 +62,15 @@
     .startingS2{
         display: none;
     }
+    .imgSection2{
+        width: 50%;
+    }
+    .section2Text{
+        width: 50%;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
     
 }
